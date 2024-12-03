@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Shopping Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+<!-- Header -->
+<header class="header">
+    <div class="logo">
+        <img src="https://img.freepik.com/premium-vector/s-letter-logo-colorful-gradient-design_161396-884.jpg?semt=ais_hybrid" alt="ShopMart Logo">
+        <span>Shoplicity</span>
+    </div>
+    
+    <div class="search-box">
+        <input type="text" placeholder="Search..." class="search-input">
+        <button type="submit" class="search-btn">
+            🔍 <!-- You can replace this with an icon or text -->
+        </button>
+    </div>
+    
+    <nav class="nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        
+        <!-- Dropdown for categories -->
+        <div class="dropdown">
+            <a href="#" class="dropdown-link"><i class="fa-solid fa-bars"></i></a>
+            <div class="dropdown-menu">
+                <a href="clothes.html">Clothes</a>
+                <a href="beauty.html">Beauty</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="footwear.html">Footwears</a>
+                <a href="electronics.html">Electronics</a>
+                <a href="furniture.html">Furniture</a>
+                <a href="grocery.html">Grocery & Kitchen</a>
+                <a href="books.html">Books</a>
+                <a href="health.html">Health</a>
+                <a href="stationery.html">Stationery</a>
+                <a href="home-decor.html">Home Decor</a>
+                <a href="sports.html">Sports</a>
+            </div>
+        </div>
+
+        <!-- Dropdown for sorting -->
+        <div class="sort-dropdown">
+            <a href="#" class="dropdown-link"><i class="fa-solid fa-sort"></i></a>
+            <div class="dropdown-menu">
+                <a href="index.html?sort=low-to-high">Price: Low to High</a>
+                <a href="index.html?sort=high-to-low">Price: High to Low</a>
+            </div>
+        </div>
+
+        <!-- Cart Button -->
+        <a href="#" class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+
+        <!-- Profile Dropdown -->
+        <div class="profile-dropdown">
+            <img src="https://t3.ftcdn.net/jpg/06/92/34/64/360_F_692346400_UzYGmrJm6qhyPPXyZeUGuyEhkwr1iSFN.jpg" alt="Profile Icon" class="profile-icon">
+            <div class="dropdown-menu">
+                <a href="#">Sign up</a>
+                <a href="#">Sign in</a>
+                <a href="#">Dark Mode/Light Mode</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+        <!-- Categories Container -->
+<div class="categories-container">
+    
+    <div class="category">
+        <img src="https://media.istockphoto.com/id/913295634/photo/portrait-of-happy-indian-family-in-traditional-wear-sitting-on-sofa-indoor.jpg?s=612x612&w=0&k=20&c=piJK_sJPK4oxUKxPG81xRLEfNn1L5qgWLAohOPBOKRM=" alt="Clothes">
+        <span><a href="clothes.html">Clothes</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Men Fashion</a>
+            <a href="#">Women Fashion</a>
+            <a href="#">Kids Fashion</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://ecommercephotographyindia.com/assets/img/gallery/cosmetics-turquoise-bg.jpg" alt="Beauty">
+        <span><a href="beauty.html">Beauty</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Makeup</a>
+            <a href="#">Skincare</a>
+            <a href="#">Hair Care</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://img.freepik.com/premium-photo/modern-fashion_1197721-24098.jpg" alt="Accessories">
+        <span><a href="accessories.html">Accessories</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Watches</a>
+            <a href="#">Jewellery</a>
+            <a href="#">Bags</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://st3.depositphotos.com/1031551/18565/i/450/depositphotos_185654098-stock-photo-red-high-heels-and-mens.jpg" alt="Footwears">
+        <span><a href="footwear.html">Footwear</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Men's Footwear</a>
+            <a href="#">Women's Footwear</a>
+            <a href="#">Kid's Footwear</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://img.etimg.com/thumb/width-1200,height-1200,imgsize-33366,resizemode-75,msid-106289730/industry/cons-products/electronics/premiumisation-investments-to-propel-appliances-consumer-electronics-industry-in-2024.jpg" alt="Electronics">
+        <span><a href="electronics.html">Electronics</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Mobiles</a>
+            <a href="#">Laptops</a>
+            <a href="#">Cameras</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://static.asianpaints.com/content/dam/asian_paints/blog/wood/benefits-of-wooden-furniture/image-1-asian-paints-m.jpeg" alt="Furniture">
+        <span><a href="furniture.html">Furniture</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Tables</a>
+            <a href="#">Chairs</a>
+            <a href="#">Beds</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://i.pinimg.com/236x/5d/41/7c/5d417c342c8a6cb5a96896c69ec815a2.jpg" alt="Grocery">
+        <span><a href="grocery.html">Grocery & Kitchen</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Fruits</a>
+            <a href="#">Vegetables</a>
+            <a href="#">Dairy Products</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mmzioLBjG0CA0_lwtIwH4cKUlCY1AkALZg&s" alt="Health">
+        <span><a href="health.html">Health & Medicines</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Medicines</a>
+            <a href="#">Supplements</a>
+            <a href="#">First Aid</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://c8.alamy.com/comp/E2247Y/stationery-set-on-white-background-E2247Y.jpg" alt="Stationery">
+        <span><a href="stationery.html">Stationery</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Notebooks</a>
+            <a href="#">Pens</a>
+            <a href="#">Art Supplies</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8JlaUwuPQk8vN92_7Bgc0VUgZxdK29xd1vA&s0" alt="Home Decor">
+        <span><a href="home-decor.html">Home decor</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Paintings</a>
+            <a href="#">Vases</a>
+            <a href="#">Wall Art</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg" alt="Sports">
+        <span><a href="sports.html">Sports</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Fitness</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Indoor Games</a>
+        </div>
+    </div>
+    <div class="category">
+        <img src="https://i.guim.co.uk/img/media/77e3e93d6571da3a5d77f74be57e618d5d930430/0_0_2560_1536/master/2560.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=c99740fab952ee29d238d75272b98a61" alt="Books">
+        <span><a href="books.html">Books</a></span>
+        <div class="dropdown-menu">
+            <a href="#">Fiction</a>
+            <a href="#">Non-Fiction</a>
+            <a href="#">Educational</a>
+        </div>
+    </div>
+</div>
+
+<!-- Carousel Section -->
+<div class="carousel-wrapper">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.shopify.com/s/files/1/0306/3336/1547/files/sale-hero-image.jpg?v=172680928" alt="Ad 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.shutterstock.com/image-vector/podium-independence-day-india-freedom-260nw-2490151355.jpg" class="d-block w-100" alt="Ad 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.nimbarkfoods.com/images/blog/1920x450.jpg" class="d-block w-100" alt="Ad 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+</div>
+
+
+<!-- Deals Section -->
+<div class="deals-container">
+    <div class="deals-section">
+        <h2>End of the Season Sale</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images-cdn.ubuy.co.in/633b5984f8af8c7e5a371e0b-na-i13-pro-max-cell-phones-6-3-inch-hd.jpg" alt="Product 1">
+                <h2>Smart Phones</h2>
+                <p>Up to 90% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://imgmedia.lbb.in/media/2023/08/64e74bb7657e506338faa8c9_1692879799068.jpg" alt="Product 2">
+                <h2>Ethnic wear</h2>
+                <p>Up to 70% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://i0.wp.com/womenzfashionnx.in/wp-content/uploads/2020/01/Wine-Art-Silk-Party-Wear-TFH-Saffron-Designer-Embroidered-Border-Work-Saree-SS-5101.jpg?fit=1280%2C1280&ssl=1" alt="Product 3">
+                <h2>Sarees</h2>
+                <p>Up to 50% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://i5.walmartimages.com/seo/Herrnalise-Men-s-Winter-faux-fur-Collar-Fleece-Cargo-Jacket-Casual-Warm-Cotton-Military-Coat-Waterproof-Windproof-PU-Moto-Vintage-BomberHoodie-S-5XL_19d183c7-648b-45e7-858a-612a9af02fd0.4094fb1786e1b131276fad695c1f0479.jpeg" alt="Product 4">
+                <h2>Men's Jackets</h2>
+                <p>Up to 80% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/1200x/3b/1b/6f/3b1b6f6d6d12eb3e9c2a9ba7706029c7.jpg" alt="Product 5">
+                <h2>Heels</h2>
+                <p>Up to 40% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://www.urvaa.com/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-10-at-13.51.25-2.jpeg" alt="Product 5">
+                <h2>Jewelleries</h2>
+                <p>Up to 60% off</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="deals-section">
+        <h2>Top Deals</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://bunnyjamesboxes.com/cdn/shop/files/bunny-james-boxes-snack-boxes-premium-sampler-variety-box-45080538939698.jpg?v=1714164888" alt="Product 6">
+                <h2>Snacks</h2>
+                <p>Min. 70% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/kph8h3k0/kitchen-tool-set/3/d/0/kitchen-utensils-11-silicone-original-imag3pqj7pajhfgz.jpeg?q=20&crop=false" alt="Product 7">
+                <h2>Kitchen items</h2>
+                <p>Min. 90% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://www.coloressence.com/cdn/shop/files/Bridal-Makeup-Kit.jpg?v=1722496591" alt="Product 8">
+                <h2>Makeup items</h2>
+                <p>Min. 50% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81lroDEpXkL.jpg" alt="Product 9">
+                <h2>Toys</h2>
+                <p>Min. 80% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://www.foliosociety.com/media/wysiwyg/Bestsellers_LPod.jpg" alt="Product 10">
+                <h2>Books</h2>
+                <p>Min. 70% off</p>
+            </div>
+            <div class="product-card">
+                <img src="https://www.ics-brands.com/cdn/shop/files/Meclay_London_Thick_Dense_Shampoo_660ml_Conditioner_Pair_Box_Save_Rupees_200_2.jpg?v=1729351272&width=1946" alt="Product 10">
+                <h2>Shampoo</h2>
+                <p>Min. 60% off</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="deals-section">
+        <h2>Best Sellers</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://gourban.in/cdn/shop/files/X2i.webp?v=1706938557&width=2048" alt="Product 11">
+                <h2>Neckbands</h2>
+                <p>Best Deals</p>
+            </div>
+            <div class="product-card">
+                <img src="https://blog.g3fashion.com/wp-content/uploads/2021/06/lehenga-2-min.jpg" alt="Product 12">
+                <h2>Bridal lehenga</h2>
+                <p>Best Deals</p>
+            </div>
+            <div class="product-card">
+                <img src="https://content.jdmagicbox.com/rep/b2b/boys-clothes/boys-clothes-3.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit" alt="Product 13">
+                <h2>Kids dresses</h2>
+                <p>Best Deals</p>
+            </div>
+            <div class="product-card">
+                <img src="https://www.stayfitindia.com/wp-content/uploads/2024/07/sports-equipment.jpg" alt="Product 14">
+                <h2>Gym & Sports</h2>
+                <p>Best Deals</p>
+            </div>
+            <div class="product-card">
+                <img src="https://furniture123.co.uk/Files/images/f123/image-hubs/black-friday-hp/f123-bf-kids-room.jpg" alt="Product 15">
+                <h2>Furnitures</h2>
+                <p>Best Deals</p>
+            </div>
+            <div class="product-card">
+                <img src="https://d1pjg4o0tbonat.cloudfront.net/content/dam/midea-aem/in/refrigerators/double-door-refrigerator/3-star-233-l-ref/Midea%20233%20L%203%20Star%20Ref_4.jpg" alt="Product 15">
+                <h2>Refrigerators</h2>
+                <p>Best Deals</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="deals-section">
+        <h2>Shop Your Favorites</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://www.ordinaree.com/cdn/shop/files/SV-20230723-0357_de076a15-0015-48c9-aa62-505fcbf62ee7_3456x.jpg?v=1718175925" alt="Product 16">
+                <h2>Women's dresses</h2>
+                <p>Buy now</p>
+            </div>
+            <div class="product-card">
+                <img src="https://thehouseofrare.com/cdn/shop/files/hero-2_5acd3857-8ce0-4b66-a818-5a356a80cba5_480x.jpg?v=1689679144" alt="Product 17">
+                <h2>Men's Tshirts</h2>
+                <p>Buy now</p>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71iomeiYDML.jpg" alt="Product 18">
+                <h2>Chocolates</h2>
+                <p>Buy now</p>
+            </div>
+            <div class="product-card">
+                <img src="https://giftsbyrashi.com/wp-content/uploads/2023/01/Love-You-Gift-Box-1.jpeg" alt="Product 19">
+                <h2>Gifts items</h2>
+                <p>Buy now</p>
+            </div>
+            <div class="product-card">
+                <img src="https://plumgoodness.com/cdn/shop/files/MKD_01.jpg?v=1728452056&width=1080" alt="Product 20">
+                <h2>Perfumes</h2>
+                <p>Buy now</p>
+            </div>
+            <div class="product-card">
+                <img src="https://zouk.co.in/cdn/shop/files/Everyday_Tote_Bag_35.jpg?v=1725877478&width=2048" alt="Product 20">
+                <h2>Women's Bag</h2>
+                <p>Buy now</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+          <!-- About Section -->
+          <div class="footer-section about">
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+    
+          <!-- Help Section -->
+          <div class="footer-section help">
+            <h3>HELP</h3>
+            <ul>
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Cancellation & Returns</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+    
+          <!-- Group Us Section -->
+          <div class="footer-section group">
+            <h3>GROUP COMPANIES</h3>
+            <ul>
+              <li><a href="https://www.myntra.com/" target="_blank">Myntra</a></li>
+              <li><a href="https://www.amazon.in/" target="_blank">Amazon</a></li>
+              <li><a href="https://www.meesho.com/" target="_blank">Meesho</a></li>
+              <li><a href="https://www.flipkart.com/" target="_blank">Flipkart</a></li>
+            </ul>
+          </div>
+    
+          <!-- Consumer Policy Section -->
+          <div class="footer-section policy">
+            <h3>CONSUMER POLICY</h3>
+            <ul>
+              <li><a href="#">Cancellation & Returns</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Grievance Redressal</a></li>
+              <li><a href="#">EPR Compliance</a></li>
+            </ul>
+          </div>
+    
+          <!-- Mail Us Section -->
+          <div class="footer-section mail">
+            <h3>MAIL US</h3>
+            <p>shop123@Shoplicity.org</p>
+          </div>
+    
+          <!-- Address Section -->
+          <div class="footer-section address">
+            <h3>ADDRESS</h3>
+            <p>Navgurukul, Raipur Campus</p>
+          </div>
+    
+          <!-- Social Media Links -->
+          <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" class="social-icon instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/i/flow/login" target="_blank" class="social-icon twitter">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4494/4494477.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank" class="social-icon facebook">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2504/2504903.png" alt="Facebook">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        </div>
+      </footer>
+</body>
+</html>
