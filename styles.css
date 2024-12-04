@@ -119,7 +119,7 @@ body {
     position: absolute;
     background: white;
     color: black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 10%);
+    box-shadow: 0 4px 6px rgba(0 0 0 10%);
     border-radius: 5px;
     min-width: 150px;
     z-index: 10;
@@ -236,14 +236,14 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 10%);
+    box-shadow: 0 4px 6px rgba(0 0 0 10%);
     transition: transform 0.2s, box-shadow 0.2s;
     z-index: 1; /* Ensure categories are visible normally */
 }
 
 .category:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 20%);
+    box-shadow: 0 6px 10px rgba(0 0 0 20%);
     z-index: 1000; /* Bring the hovered category above others */
 }
 
@@ -269,7 +269,7 @@ body {
     left: 0;
     background: white;
     color: rgb(0 0 0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 10%);
+    box-shadow: 0 4px 6px rgba(0 0 0 10%);
     border-radius: 5px;
     min-width: 150px;
 }
@@ -373,7 +373,7 @@ body {
     flex: 1 1 calc(16.66% - 20px); /* Default: 6 cards per row */
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 10%);
+    box-shadow: 0 4px 8px rgba(0 0 0 10%);
     text-align: center;
     transition: transform 0.3s ease;
     overflow: hidden;
