@@ -158,7 +158,7 @@ body {
 }
 
 /* Media Queries */
-@media (width >= 768px) {
+@media (max-width: 768px) {
     /* Search bar should be full width on small screens */
     .search-box {
         max-width: 100%;
@@ -197,7 +197,7 @@ body {
     }
 }
 
-@media (width >= 480px) {
+@media (max-width: 480px) {
     .header .logo {
         font-size: 1.2rem; /* Make logo text smaller on very small screens */
     }
@@ -306,7 +306,7 @@ body {
 }
 
 /* Navbar Margin Adjustment for Small Screens */
-@media (width >= 768px) {
+@media (max-width: 768px) {
     .categories-container {
         margin-top: 150px; /* Adjust for smaller screen navbar height */
     }
@@ -330,7 +330,7 @@ body {
 }
 
 /* Media Query for smaller screens */
-@media (width >= 768px) {
+@media (max-width: 768px) {
     .carousel-wrapper {
         padding: 0 10px; /* Reduce padding for smaller screens */
     }
@@ -342,7 +342,7 @@ body {
 }
 
 /* Media Query for very small screens (mobile) */
-@media (width >= 480px) {
+@media (max-width: 480px) {
     .carousel-wrapper {
         padding: 0 5px; /* Reduce padding for mobile screens */
     }
@@ -484,21 +484,21 @@ body {
 /* Responsive Media Queries */
 
 /* Large screens (6 cards in a row) */
-@media (width <= 1200px) {
+@media (min-width: 1200px) {
     .product-card {
         flex: 1 1 calc(16.66% - 20px);
     }
 }
 
 /* Medium screens (3 cards in a row) */
-@media (width >= 992px) {
+@media (max-width: 992px) {
     .product-card {
         flex: 1 1 calc(33.33% - 20px);
     }
 }
 
 /* Small screens (2 cards in a row) */
-@media (width >= 768px) {
+@media (max-width: 768px) {
     .product-card {
         flex: 1 1 calc(50% - 20px);
     }
@@ -509,7 +509,7 @@ body {
 }
 
 /* Extra small screens (1 card in a row) */
-@media (width >= 480px) {
+@media (max-width: 480px) {
     .product-card {
         flex: 1 1 calc(100% - 20px); /* Single card in a row */
     }
@@ -614,7 +614,7 @@ body {
   /* Media Queries for responsiveness */
   
   /* Tablets and smaller screens (less than 768px) */
-  @media (width >=768px) {
+  @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;  /* Stack the sections vertically */
       padding: 0 10px;
@@ -642,7 +642,7 @@ body {
   }
   
   /* Phones and very small screens (less than 480px) */
-  @media (width <= 480px) {
+  @media (min-width: 480px) {
     .footer-container {
       padding: 0 5px;  /* Reduce padding for very small screens */
     }
@@ -667,7 +667,7 @@ body {
   }
   
   /* Larger screens, tablets, or laptops (more than 1024px) */
-  @media (width <= 1024px) {
+  @media (min-width: 1024px) {
     .footer-container {
       padding: 0 30px; /* Increase padding for larger screens */
     }
