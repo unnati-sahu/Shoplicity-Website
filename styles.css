@@ -13,12 +13,6 @@ html, body {
     height: 100%;
 }
 
-body {
-    margin: 0;
-    font-family: var(--font-family);
-    background-color: var(--background-color);
-}
-
 h1 {
     text-align: center;
 }
@@ -28,6 +22,7 @@ h1 {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: var(--background-color);
 }
 
 .header {
@@ -124,7 +119,7 @@ body {
     position: absolute;
     background: white;
     color: black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 10%);
     border-radius: 5px;
     min-width: 150px;
     z-index: 10;
@@ -163,7 +158,7 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (width >= 768px) {
     /* Search bar should be full width on small screens */
     .search-box {
         max-width: 100%;
@@ -202,7 +197,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (width >= 480px) {
     .header .logo {
         font-size: 1.2rem; /* Make logo text smaller on very small screens */
     }
@@ -241,14 +236,14 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 10%);
     transition: transform 0.2s, box-shadow 0.2s;
     z-index: 1; /* Ensure categories are visible normally */
 }
 
 .category:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 20%);
     z-index: 1000; /* Bring the hovered category above others */
 }
 
@@ -273,8 +268,8 @@ body {
     top: 100%;
     left: 0;
     background: white;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(0 0 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 10%);
     border-radius: 5px;
     min-width: 150px;
 }
@@ -311,7 +306,7 @@ body {
 }
 
 /* Navbar Margin Adjustment for Small Screens */
-@media (max-width: 768px) {
+@media (width >= 768px) {
     .categories-container {
         margin-top: 150px; /* Adjust for smaller screen navbar height */
     }
@@ -335,7 +330,7 @@ body {
 }
 
 /* Media Query for smaller screens */
-@media (max-width: 768px) {
+@media (width >= 768px) {
     .carousel-wrapper {
         padding: 0 10px; /* Reduce padding for smaller screens */
     }
@@ -347,7 +342,7 @@ body {
 }
 
 /* Media Query for very small screens (mobile) */
-@media (max-width: 480px) {
+@media (width >= 480px) {
     .carousel-wrapper {
         padding: 0 5px; /* Reduce padding for mobile screens */
     }
@@ -378,7 +373,7 @@ body {
     flex: 1 1 calc(16.66% - 20px); /* Default: 6 cards per row */
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 10%);
     text-align: center;
     transition: transform 0.3s ease;
     overflow: hidden;
@@ -489,21 +484,21 @@ body {
 /* Responsive Media Queries */
 
 /* Large screens (6 cards in a row) */
-@media (min-width: 1200px) {
+@media (width <= 1200px) {
     .product-card {
         flex: 1 1 calc(16.66% - 20px);
     }
 }
 
 /* Medium screens (3 cards in a row) */
-@media (max-width: 992px) {
+@media (width >= 992px) {
     .product-card {
         flex: 1 1 calc(33.33% - 20px);
     }
 }
 
 /* Small screens (2 cards in a row) */
-@media (max-width: 768px) {
+@media (width >= 768px) {
     .product-card {
         flex: 1 1 calc(50% - 20px);
     }
@@ -514,7 +509,7 @@ body {
 }
 
 /* Extra small screens (1 card in a row) */
-@media (max-width: 480px) {
+@media (width >= 480px) {
     .product-card {
         flex: 1 1 calc(100% - 20px); /* Single card in a row */
     }
@@ -619,7 +614,7 @@ body {
   /* Media Queries for responsiveness */
   
   /* Tablets and smaller screens (less than 768px) */
-  @media (max-width: 768px) {
+  @media (width >=768px) {
     .footer-container {
       flex-direction: column;  /* Stack the sections vertically */
       padding: 0 10px;
@@ -647,7 +642,7 @@ body {
   }
   
   /* Phones and very small screens (less than 480px) */
-  @media (max-width: 480px) {
+  @media (width <= 480px) {
     .footer-container {
       padding: 0 5px;  /* Reduce padding for very small screens */
     }
@@ -672,7 +667,7 @@ body {
   }
   
   /* Larger screens, tablets, or laptops (more than 1024px) */
-  @media (min-width: 1024px) {
+  @media (width <= 1024px) {
     .footer-container {
       padding: 0 30px; /* Increase padding for larger screens */
     }
