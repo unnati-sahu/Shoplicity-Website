@@ -273,7 +273,7 @@ body {
     top: 100%;
     left: 0;
     background: white;
-    color: rgb(0, 0, 0);
+    color: rgb(0 0 0);
     box-shadow: 0 4px 6px rgba(0 0 0 10%);
     border-radius: 5px;
     min-width: 150px;
